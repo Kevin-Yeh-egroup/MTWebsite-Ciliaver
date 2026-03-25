@@ -6,6 +6,8 @@ import Link from "next/link"
 const situations = [
   {
     emoji: "💸",
+    icon: Wallet,
+    iconColor: "text-emerald-600",
     title: "想存錢，但總是存不起來",
     yourSituation: [
       "每個月都有花錢，但不知道去哪",
@@ -22,6 +24,8 @@ const situations = [
   },
   {
     emoji: "🧾",
+    icon: Home,
+    iconColor: "text-amber-600",
     title: "開銷越來越多，開始有點撐",
     yourSituation: [
       "家庭支出持續增加",
@@ -39,6 +43,8 @@ const situations = [
   },
   {
     emoji: "📉",
+    icon: TrendingDown,
+    iconColor: "text-sky-600",
     title: "收入或生活正在變動",
     yourSituation: [
       "收入不穩或下降",
@@ -56,6 +62,8 @@ const situations = [
   },
   {
     emoji: "🚨",
+    icon: AlertTriangle,
+    iconColor: "text-rose-600",
     title: "已經有壓力，不知道怎麼辦",
     yourSituation: [
       "有負債或現金流問題",
