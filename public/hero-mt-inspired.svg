@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="h-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffefb"/>
+      <stop offset="40%" stop-color="#fdfbf7"/>
+      <stop offset="100%" stop-color="#f8f3ea"/>
+    </linearGradient>
+    <radialGradient id="h-b1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 220) rotate(55) scale(720 640)">
+      <stop stop-color="#d1ab6d" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#d1ab6d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="h-b2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1680 180) rotate(120) scale(560 520)">
+      <stop stop-color="#c9a066" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#c9a066" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="h-b3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 920) rotate(-25) scale(900 420)">
+      <stop stop-color="#e8d4b4" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e8d4b4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="h-line" x1="0" y1="0" x2="1920" y2="0">
+      <stop stop-color="#cca86a" stop-opacity="0"/>
+      <stop offset="0.35" stop-color="#cca86a" stop-opacity="0.14"/>
+      <stop offset="0.65" stop-color="#cca86a" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#cca86a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#h-bg)"/>
+  <rect width="1920" height="1080" fill="url(#h-b1)"/>
+  <rect width="1920" height="1080" fill="url(#h-b2)"/>
+  <rect width="1920" height="1080" fill="url(#h-b3)"/>
+  <path d="M0 720 C 420 660, 520 520, 960 560 S 1500 640, 1920 580 L 1920 1080 L 0 1080 Z" fill="#cca86a" fill-opacity="0.05"/>
+  <g stroke="#a67c43" stroke-opacity="0.16" stroke-width="1.25" fill="none" stroke-linecap="round">
+    <path d="M120 380 Q 480 280, 840 360 T 1600 320"/>
+    <path d="M200 760 Q 560 640, 920 700 T 1780 620"/>
+    <path d="M340 1080 C 520 820, 900 900, 1120 720 S 1500 520, 1820 440"/>
+  </g>
+  <g stroke="#c9a066" stroke-opacity="0.22" stroke-width="1.5" fill="none">
+    <circle cx="1520" cy="420" r="180"/>
+    <circle cx="1520" cy="420" r="120"/>
+    <path d="M400 200c80-40 200-30 280 20s120 140 100 240-100 180-200 200"/>
+  </g>
+  <rect y="536" width="1920" height="2" fill="url(#h-line)"/>
+</svg>

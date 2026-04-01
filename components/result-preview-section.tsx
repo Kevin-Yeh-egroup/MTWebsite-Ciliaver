@@ -2,30 +2,31 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Eye, Target, Footprints } from "lucide-react"
+import { familyFinHealthLinks } from "@/lib/external-links"
 
 const benefits = [
   {
     icon: Eye,
-    title: "看見現在的位置",
-    description: "知道自己目前是穩定、吃力或有風險",
+    title: "先看懂自己現在在哪",
+    description: "知道自己目前是穩定、吃力還是有風險",
   },
   {
     icon: Target,
-    title: "找出問題在哪",
-    description: "收入、支出或債務的影響",
+    title: "釐清問題從哪來",
+    description: "分辨是收入、支出還是負債在影響你",
   },
   {
     icon: Footprints,
     title: "知道可以怎麼開始",
-    description: "不用一次改很多，先做一小步",
+    description: "不用一次改很多，先做一小步就好",
   },
 ]
 
 export function ResultPreviewSection() {
   return (
-    <section className="py-16 md:py-24 bg-secondary/50">
+    <section id="screening-preview" className="scroll-mt-24 py-16 md:py-24 bg-secondary/50">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center text-foreground mb-10">
+        <h2 className="text-2xl md:text-3xl font-semibold text-center text-foreground mb-10 text-balance">
           做完快篩，你會看到什麼？
         </h2>
 
@@ -33,7 +34,7 @@ export function ResultPreviewSection() {
         <div className="max-w-md mx-auto mb-12">
           <Card className="rounded-2xl shadow-lg border-border/50 overflow-hidden">
             <div className="bg-primary/10 px-6 py-4 border-b border-border/50">
-              <h3 className="text-lg font-medium text-foreground">你的目前狀況</h3>
+              <h3 className="text-lg font-medium text-foreground">你目前的狀況</h3>
             </div>
             <CardContent className="p-6 space-y-4">
               <div className="space-y-2">
@@ -78,12 +79,15 @@ export function ResultPreviewSection() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
+            asChild
           >
-            免費家庭財務快篩
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <a href={familyFinHealthLinks.financialResilience} target="_blank" rel="noopener noreferrer">
+              免費家庭財務快篩
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
         </div>
       </div>

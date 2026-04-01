@@ -19,11 +19,14 @@ const episodes = [
 
 export function PodcastSection() {
   return (
-    <section className="py-16 md:py-24 bg-secondary/50">
+    <section id="insights" className="scroll-mt-24 py-16 md:py-24 bg-secondary/50">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center text-foreground mb-10">
-          聽聽別人的故事，你並不孤單
+        <h2 className="text-2xl md:text-3xl font-semibold text-center text-foreground text-balance">
+          觀點與成果
         </h2>
+        <p className="mt-3 text-center text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
+          聽聽別人的經驗與做法，你並不孤單。
+        </p>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {episodes.map((episode, index) => (
@@ -60,7 +63,7 @@ export function PodcastSection() {
             size="lg" 
             className="rounded-full group"
           >
-            查看更多故事
+            聽更多內容
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>

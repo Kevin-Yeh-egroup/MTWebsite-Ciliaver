@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: '馴錢師財商研究中心｜理財也理心',
-  description: '我們不賣產品，只陪你一起看懂現在的狀況。從壓力、關係到金錢，慢慢理出一條路。免費家庭財務快篩，只需1分鐘。',
+  description: '我們不賣產品，只陪你一起看懂現在的狀況。從壓力、關係到金錢，慢慢理出一條路。免費家庭財務快篩，只需 1 分鐘。',
   generator: 'v0.app',
   icons: {
     icon: [

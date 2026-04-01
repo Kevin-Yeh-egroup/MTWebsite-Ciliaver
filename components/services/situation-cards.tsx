@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Wallet, Home, TrendingDown, AlertTriangle } from "lucide-react"
-import Link from "next/link"
+import { familyFinHealthLinks, mtLinks } from "@/lib/external-links"
 
 const situations = [
   {
     emoji: "💸",
     icon: Wallet,
-    iconColor: "text-emerald-600",
+    iconColor: "text-primary",
     title: "想存錢，但總是存不起來",
     yourSituation: [
-      "每個月都有花錢，但不知道去哪",
+      "每個月都有花錢，但搞不清楚花到哪去",
       "想改變，但很難持續",
     ],
     howWeHelp: [
@@ -18,9 +18,9 @@ const situations = [
       "看清楚錢的流向",
       "找到可以開始的一小步",
     ],
-    primaryCta: { label: "先看看我的狀況", href: "/screening" },
-    secondaryCta: { label: "了解個人成長課程", href: "/courses" },
-    color: "bg-emerald-50 border-emerald-100",
+    primaryCta: { label: "先看看我的狀況", href: familyFinHealthLinks.financialResilience },
+    secondaryCta: { label: "了解個人成長課程", href: mtLinks.topicSeminars },
+    color: "bg-primary/10 border-primary/20",
   },
   {
     emoji: "🧾",
@@ -37,8 +37,8 @@ const situations = [
       "找出可以調整的空間",
       "建立更穩定的節奏",
     ],
-    primaryCta: { label: "先整理我的狀況", href: "/screening" },
-    secondaryCta: { label: "預約家庭財務顧問", href: "/consulting" },
+    primaryCta: { label: "先整理我的狀況", href: familyFinHealthLinks.financialResilience },
+    secondaryCta: { label: "預約家庭財務顧問", href: mtLinks.paidConsultation },
     color: "bg-amber-50 border-amber-100",
   },
   {
@@ -53,11 +53,11 @@ const situations = [
     ],
     howWeHelp: [
       "預估未來收支",
-      "調整生活配置",
-      "建立安全邊界",
+      "調整生活開銷與安排",
+      "預留一點財務緩衝",
     ],
-    primaryCta: { label: "幫我看看接下來", href: "/screening" },
-    secondaryCta: { label: "了解規劃服務", href: "/planning" },
+    primaryCta: { label: "幫我看看接下來", href: familyFinHealthLinks.financialResilience },
+    secondaryCta: { label: "了解規劃服務", href: mtLinks.paidConsultation },
     color: "bg-sky-50 border-sky-100",
   },
   {
@@ -75,8 +75,8 @@ const situations = [
       "找到優先順序",
       "提供可行的下一步",
     ],
-    primaryCta: { label: "和專人聊聊", href: "/contact" },
-    secondaryCta: { label: "了解信扶專案", href: "/xinfu" },
+    primaryCta: { label: "和專人聊聊", href: mtLinks.contact },
+    secondaryCta: { label: "了解信扶專案", href: mtLinks.ctbcCase },
     color: "bg-rose-50 border-rose-100",
     highlighted: true,
   },
@@ -141,14 +141,14 @@ export function SituationCards() {
               
               <CardFooter className="flex flex-col gap-3 pt-4">
                 <Button className="w-full rounded-xl py-5 text-base" asChild>
-                  <Link href={situation.primaryCta.href}>
+                  <a href={situation.primaryCta.href} target="_blank" rel="noopener noreferrer">
                     {situation.primaryCta.label}
-                  </Link>
+                  </a>
                 </Button>
                 <Button variant="outline" className="w-full rounded-xl bg-card/80 py-5 text-base" asChild>
-                  <Link href={situation.secondaryCta.href}>
+                  <a href={situation.secondaryCta.href} target="_blank" rel="noopener noreferrer">
                     {situation.secondaryCta.label}
-                  </Link>
+                  </a>
                 </Button>
               </CardFooter>
             </Card>

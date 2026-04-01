@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { familyFinHealthLinks, mtLinks } from "@/lib/external-links"
 
 export function ServicesHero() {
   return (
@@ -21,15 +21,15 @@ export function ServicesHero() {
         
         <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Button size="lg" className="w-full rounded-2xl px-10 py-7 text-lg font-semibold shadow-md sm:w-auto" asChild>
-            <Link href="/screening">
+            <a href={familyFinHealthLinks.financialResilience} target="_blank" rel="noopener noreferrer">
               先看看我的狀況（免費快篩）
-            </Link>
+            </a>
           </Button>
-          
+
           <Button variant="ghost" size="lg" className="text-base text-muted-foreground underline-offset-4 hover:text-foreground hover:underline" asChild>
-            <Link href="/contact">
+            <a href={mtLinks.contact} target="_blank" rel="noopener noreferrer">
               我想直接找人聊聊
-            </Link>
+            </a>
           </Button>
         </div>
       </div>

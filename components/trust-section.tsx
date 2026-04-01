@@ -27,11 +27,14 @@ const partners = [
 
 export function TrustSection() {
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section id="work" className="scroll-mt-24 py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center text-foreground mb-12">
-          我們陪伴過許多家庭走過這段路
+        <h2 className="text-2xl md:text-3xl font-semibold text-center text-foreground text-balance">
+          我們在做的事
         </h2>
+        <p className="mt-3 text-center text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12">
+          我們陪伴過許多家庭走過這段路，也與政府、企業與社福單位一起推動財務韌性。
+        </p>
 
         {/* Stats */}
         <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto mb-14">

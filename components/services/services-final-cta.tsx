@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { familyFinHealthLinks } from "@/lib/external-links"
 
 export function ServicesFinalCta() {
   return (
@@ -11,9 +11,9 @@ export function ServicesFinalCta() {
             className="w-full rounded-2xl px-10 py-8 text-xl font-semibold shadow-md sm:w-auto" 
             asChild
           >
-            <Link href="/screening">
+            <a href={familyFinHealthLinks.financialResilience} target="_blank" rel="noopener noreferrer">
               先看看我的狀況（免費快篩）
-            </Link>
+            </a>
           </Button>
           
           <p className="mt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
